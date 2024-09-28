@@ -1,0 +1,4 @@
+[core]
+    remote = mlops-josanabr
+['remote "mlops-josanabr"']
+    url = s3://mlops-josanabr/data
