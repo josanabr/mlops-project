@@ -24,5 +24,7 @@ class Cleaner:
         IQR = Q3 - Q1
         upper_bound = Q3 + 1.5 * IQR
         data = data[data['AnnualPremium'] <= upper_bound]
+
+        data = data.dropna()
         
         return data

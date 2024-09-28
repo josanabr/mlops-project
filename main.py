@@ -88,6 +88,13 @@ def train_with_mlflow():
         mlflow.log_metric("roc", roc_auc_score)
         mlflow.log_metric('precision', report['weighted avg']['precision'])
         mlflow.log_metric('recall', report['weighted avg']['recall'])
+        #---
+        #mlflow.set_tracking_uri("file:///home/john/demostracion/MLOps/my-own-repository/mlops-project/mlruns")
+        #with open("test.txt","w") as f:
+        #  f.write("Prueba!!!")
+        #mlflow.log_artifact("test.txt")
+        print(f"TRACKING URI: {mlflow.get_tracking_uri()}")
+        #---
         mlflow.sklearn.log_model(trainer.pipeline, "model")
                 
         # Register the model
