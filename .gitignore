@@ -163,6 +163,6 @@ cython_debug/
 # /data
 
 !.dvc
-data.dvc
+!data.dvc
 mlruns
 mlruns/*
