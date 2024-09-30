@@ -162,7 +162,7 @@ cython_debug/
 #.idea/
 # /data
 
-.dvc
+!.dvc
 data.dvc
 mlruns
 mlruns/*
